@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "shopping-portal-ui"
+    }
+  },
+  "defaultProject": "shopping-portal-ui",
+  "cli": {
+    "analytics": false
+  }
 }

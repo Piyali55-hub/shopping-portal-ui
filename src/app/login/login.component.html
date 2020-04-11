@@ -1,0 +1,16 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)" class="ui form">
+<div class="field">
+    <label for="userNameId">Username:</label>
+    <input type="text" id="userNameId" name="userName" [formControl]="loginForm.controls['userName']"/>
+</div>
+<div class="field">
+    <label for="passwordId">Password:</label>
+    <input type="text" id="passwordId" name="password" [formControl]="loginForm.controls['password']"/>
+</div>
+<button type="submit" class="ui button">Submit</button>
+
+</form>
+
+<div *ngIf="loginResult!=undefined">
+    <p>{{loginResult}}</p>
+</div>
